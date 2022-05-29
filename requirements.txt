@@ -1,0 +1,5 @@
+Django>3.2,<3.3
+asgiref
+pytz
+sqlparse
+#dar file requirements niaz nist noskheye daghigh ro dashte bashim 
