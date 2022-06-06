@@ -5,13 +5,13 @@ from django.http import HttpResponse,JsonResponse
 
 
 def home_view(request):
-    return HttpResponse("<h1>Home page<h1>")       #In this code we return a html code
+    return render(request, 'application/home.html')       #In this code we return a html code
 
 
 def contact_view(request):
-    return HttpResponse('<h1>Contact page<h1>')      #In this code we return the json code
+    return render(request, 'application/contact.html')      #In this code we return the json code
 
 
 
 def index_view(request):
-    return HttpResponse("<h1>Index page<h1>")
+    return render(request, 'application/index.html')
