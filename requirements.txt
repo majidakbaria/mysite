@@ -2,4 +2,5 @@ Django>3.2,<3.3
 asgiref
 pytz
 sqlparse
-#dar file requirements niaz nist noskheye daghigh ro dashte bashim 
+#dar file requirements niaz nist noskheye daghigh ro dashte bashim va haraksi bekhad module morede niaz ba module haye hamrahesh
+#ro estefade kone bayad az command pip install -r requirements.txt estefade bokone.
