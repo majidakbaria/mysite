@@ -4,14 +4,14 @@ from django.http import HttpResponse,JsonResponse
 
 
 
-def home_view(request):
-    return render(request, 'application/home.html')       #In this code we return a html code
+def index_view(request):
+    return render(request, 'index.html')       #In this code we return a html code
+
+
+def about_view(request):
+    return render(request, 'about.html')      #In this code we return the json code
+
 
 
 def contact_view(request):
-    return render(request, 'application/contact.html')      #In this code we return the json code
-
-
-
-def index_view(request):
-    return render(request, 'application/index.html')
+    return render(request, 'contact.html')
