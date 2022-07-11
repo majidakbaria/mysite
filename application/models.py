@@ -23,7 +23,7 @@ class post(models.Model):
     image=models.ImageField(upload_to='blog/',default='default.jpg')
     author=models.ForeignKey(User,on_delete=models.SET_NULL,null=True)
     title=models.CharField(max_length=240,default="hi")
-    content=models.CharField(max_length=230,default="hello")
+    content=models.TextField()   #TextField niazi be default nadare.
     counted_views=models.IntegerField(default=0)
     status=models.BooleanField(default=False)
     published_date=models.DateTimeField(null=True)
@@ -41,6 +41,18 @@ class post(models.Model):
     def __str__(self):
        return self.title
        # return " {} + {} + {} " .format(self.title,self.id,self.status) 
+
+    def snippets(self):
+        return self.content[:200] + '...'
+
+
+
+
+
+
+
+
+
 
 
 class contact(models.Model):
