@@ -8,5 +8,8 @@ app_name = "blog"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', blog_index_view, name="index"),
-    path('/single', blog_single_view, name='single')
+    path('<int:pid>', blog_single_view, name='single'),
+    #path('<str:name>/<str:lastname>/gender/<str:gender>', test_view, name='test') #url haye ma mitoone ham static bashe ham dynamic
+    #path('post-<int:pid>', test_view, name='test')
+
 ]
