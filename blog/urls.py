@@ -11,5 +11,6 @@ urlpatterns = [
     path('<int:pid>', blog_single_view, name='single'),
     #path('<str:name>/<str:lastname>/gender/<str:gender>', test_view, name='test') #url haye ma mitoone ham static bashe ham dynamic
     #path('post-<int:pid>', test_view, name='test')
+    path('test',test_view,name='test')
 
 ]
